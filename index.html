@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Weakest to the Strongest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Homepage Section -->
+    <div id="homepage" class="page active">
+        <div class="homepage-background">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Logo" class="logo" onclick="navigateToHome()" tabindex="0">
+                </div>
+                <nav class="nav-buttons" id="nav-buttons">
+                    <button class="btn btn--outline" id="login-btn" onclick="navigateToLogin()">Login</button>
+                    <button class="btn btn--primary" id="register-btn" onclick="navigateToLogin()">Register</button>
+                    <div class="profile-section hidden" id="profile-section">
+                        <img src="assets/profile_picture.png" alt="Profile" class="profile-pic">
+                        <span class="profile-name">Reader</span>
+                        <button class="btn btn--outline" onclick="logout()">Logout</button>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="main-content">
+                <div class="content-grid">
+                    <div class="poster-section">
+                        <img src="assets/poster.png" alt="Story Poster" class="poster">
+                    </div>
+                    
+                    <div class="story-info">
+                        <h1 class="story-title sensa-wild-fill">From the Weakest to the Strongest</h1>
+                        <h2 class="story-title-chinese sensa-wild-fill">从最弱到最强</h2>
+                        
+                        <div class="story-description playpen-sans">
+                            <p>In a realm where power blazes like the sun, the weakest spark is often the most dangerous. At the Sunstone Keep, magic is measured in light—and Elian has none to spare. Mocked as the "Mocking Seed" for his frail body and feeble resonance, he's little more than a ghost among warriors. But when he stumbles upon a forbidden scroll that feeds not on sunlight, but on sorrow, rage, and truth, he discovers a different kind of power: one that doesn't shine… it storms. Years later, when a devourer of light threatens to swallow the world whole, it won't be the brightest flame that saves them—but the quiet boy who learned to sing with thunder in his veins. Welcome to a tale where weakness is not the end… but the beginning of a storm.</p>
+                        </div>
+
+                        <div class="tags-section">
+                            <h3 class="tags-title sensa-wild-fill">Tags.</h3>
+                            <div class="tags">
+                                <span class="tag sensa-wild-fill">Fantasy</span>
+                                <span class="tag sensa-wild-fill">Underdog</span>
+                                <span class="tag sensa-wild-fill">Superpower</span>
+                                <span class="tag sensa-wild-fill">Angst</span>
+                                <span class="tag sensa-wild-fill">Redemption</span>
+                                <span class="tag sensa-wild-fill">WeakMC</span>
+                                <span class="tag sensa-wild-fill">Outcast</span>
+                                <span class="tag sensa-wild-fill">Hiddenpower</span>
+                                <span class="tag sensa-wild-fill">Growth</span>
+                                <span class="tag sensa-wild-fill">PowerfulMC</span>
+                                <span class="tag sensa-wild-fill">Revenge</span>
+                                <span class="tag sensa-wild-fill">Betrayal</span>
+                                <span class="tag sensa-wild-fill">Emotional</span>
+                                <span class="tag sensa-wild-fill">Darkpast</span>
+                                <span class="tag sensa-wild-fill">Victory</span>
+                                <span class="tag sensa-wild-fill">Action</span>
+                                <span class="tag sensa-wild-fill">Magic</span>
+                                <span class="tag sensa-wild-fill">Progression</span>
+                            </div>
+                        </div>
+
+                        <div class="table-of-contents">
+                            <h3 class="toc-title sensa-wild-fill">Table of Contents</h3>
+                            <div class="chapter-list">
+                                <div class="chapter-item" onclick="navigateToChapter(1)" tabindex="0">
+                                    <span class="chapter-title playpen-sans">01: The Mocked Seed</span>
+                                    <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                                </div>
+                                <div class="chapter-item" onclick="navigateToChapter(2)" tabindex="0">
+                                    <span class="chapter-title playpen-sans">02: The Crown of Storms</span>
+                                    <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Chapter 1 Page -->
+    <div id="chapter1" class="page">
+        <div class="chapter-background">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Logo" class="logo" onclick="navigateToHome()" tabindex="0">
+                </div>
+                <nav class="nav-buttons" id="nav-buttons-ch1">
+                    <button class="btn btn--outline" id="login-btn-ch1" onclick="navigateToLogin()">Login</button>
+                    <button class="btn btn--primary" id="register-btn-ch1" onclick="navigateToLogin()">Register</button>
+                    <div class="profile-section hidden" id="profile-section-ch1">
+                        <img src="assets/profile_picture.png" alt="Profile" class="profile-pic">
+                        <span class="profile-name">Reader</span>
+                        <button class="btn btn--outline" onclick="logout()">Logout</button>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="chapter-main">
+                <div class="chapter-header-table">
+                    <h1 class="chapter-title sensa-wild-fill">Chapter 1 : The Mocked Seed</h1>
+                    <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                </div>
+
+                <div class="chapter-content playpen-sans">
+                    <p>The air in the training yard was thick with the scent of dust and sweat, a perfume of strength that Elian could never wear. He was a smudge of grey against the vibrant tapestries of the Sunstone Keep, a boy of seventeen with limbs like brittle reeds and a magical resonance so faint it was a whisper in a thunderstorm. In a realm where power was currency, faith, and law, Elian was bankrupt.</p>
+
+                    <p>"Again," grunted Master Borin, his voice like grinding stones.</p>
+
+                    <p>Elian clenched his jaw, focusing on the practice glaive that felt like a tree trunk in his hands. He willed the latent energy within him, the so-called "spark" every citizen possessed, to flow into the weapon. The other novices, their glaives already humming with visible auras of crimson or gold, watched with bored contempt. A faint, sputtering glow, the colour of weak moonlight, flickered around Elian's blade before dying with a pathetic fizzle.</p>
+
+                    <p>A snicker cut through the air, sharpened by Kael's voice. "Perhaps he's trying to light a candle. A very small, very distant candle." Kael, his own glaive blazing with solar fury, didn't even look at Elian as he mocked him. The laughter that followed was a familiar, biting wind.</p>
+
+                    <p>Elian's daily life was a tapestry of such humiliations. He was the punchline of jokes, the spare hand for scrubbing floors, the "Mocking Seed" – a name given because a seed, at least, had potential. He was nothing.</p>
+
+                    <p>That night, hiding from the revelry of the Solar Ascendance festival in the one place no one else would go—the derelict Royal Archives—Elian's despair curdled into defiance. He wasn't seeking answers; he was seeking shelter. His fingers trailed over rotting scrolls until they brushed against one not made of parchment, but of strange, pliable metal. It was unadorned and locked with a mechanism that had no keyhole.</p>
+
+                    <p>Frustration, the bitter companion of his life, flared. He pressed his thumb against the cold metal, a useless gesture. A sharp pain pricked his skin; the mechanism had drawn a drop of blood. To his astonishment, the scroll hissed open. The text within was not written in ink, but in shifting, electric light. The title read: "The Tempest Within: A Treatise on Inner Storms."</p>
+
+                    <p>The text spoke not of drawing power from the sun or from physical strength, but from the core of one's own emotional turmoil—the pain, the fear, the repressed fury. It spoke of a power that was not borrowed, but forged in the soul's deepest crucible. As he read the first few lines, a strange sensation bloomed in his chest, not the weak flicker of sunlight, but a low, resonant hum, like distant thunder. For the first time, the weakness inside him did not feel like a void, but a gathering storm.</p>
+                </div>
+
+                <div class="chapter-navigation">
+                    <h3 class="toc-title sensa-wild-fill">Table of Contents</h3>
+                    <div class="chapter-list">
+                        <div class="chapter-item active">
+                            <span class="chapter-title playpen-sans">01: The Mocked Seed</span>
+                            <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                        </div>
+                        <div class="chapter-item" onclick="navigateToChapter(2)" tabindex="0">
+                            <span class="chapter-title playpen-sans">02: The Crown of Storms</span>
+                            <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Chapter 2 Page -->
+    <div id="chapter2" class="page">
+        <div class="chapter-background">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Logo" class="logo" onclick="navigateToHome()" tabindex="0">
+                </div>
+                <nav class="nav-buttons" id="nav-buttons-ch2">
+                    <button class="btn btn--outline" id="login-btn-ch2" onclick="navigateToLogin()">Login</button>
+                    <button class="btn btn--primary" id="register-btn-ch2" onclick="navigateToLogin()">Register</button>
+                    <div class="profile-section hidden" id="profile-section-ch2">
+                        <img src="assets/profile_picture.png" alt="Profile" class="profile-pic">
+                        <span class="profile-name">Reader</span>
+                        <button class="btn btn--outline" onclick="logout()">Logout</button>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="chapter-main">
+                <div class="chapter-header-table">
+                    <h1 class="chapter-title sensa-wild-fill">Chapter 2: The Crown of Storms</h1>
+                    <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                </div>
+
+                <div class="chapter-content playpen-sans">
+                    <p>Five years later, the Sunstone Keep faced a true storm. Kael, now the arrogant Sun-General, lay broken on the marble floor, his vaunted solar magic extinguished by the entity that now dominated the throne room. It was the Umbral Devourer, a being of voracious nothingness that fed on light and life, summoned by reckless ambition. It was a threat strength alone could not conquer, for it consumed any power thrown against it.</p>
+
+                    <p>The court mages were drained, the warriors' weapons useless. Hope was a dying ember.</p>
+
+                    <p>From the shadows of a shattered archway, a figure emerged. He was taller now, his frame still lean but etched with the resilience of hard years. His eyes, once downcast, held the calm of a deep sky. It was Elian.</p>
+
+                    <p>Kael spat blood. "The Mocking Seed? Come to die with the rest of us?"</p>
+
+                    <p>Elian ignored him, walking toward the Devourer. It swirled, sensing not a bright, consumable power, but a deep, turbulent stillness. It lunged.</p>
+
+                    <p>Elian did not raise a weapon. He did not summon a shield of light. Instead, he closed his eyes and reached inward. He touched the years of ridicule, the ache of loneliness, the silent, screaming fury of powerlessness. He did not suppress them as he had been taught. He accepted them. He understood them. And he let them flow.</p>
+
+                    <p>A corona of pure, crackling energy erupted from him—not the singular hue of sun or moon, but a swirling maelstrom of violet, silver, and deep blue. Lightning arced around him without striking; winds howled but did not touch the fallen. He had not fought his inner storm; he had mastered it. His compassion, born from his suffering, allowed him to control the chaos without being consumed by it.</p>
+
+                    <p>The Umbral Devourer recoiled. It could consume light, but it could not consume a tempest. It could not feed on a power that was born of acceptance, not aggression. Elian extended a hand, not in attack, but in offering. The storm around him did not strike the void; it enveloped it. The lightning did not destroy; it illuminated the emptiness within the creature, filling its nothingness with the vibrant, chaotic energy of life itself. With a sound like a sigh, the Devourer unraveled, not vanquished, but transformed, dissipated into harmless motes of light.</p>
+
+                    <p>Silence fell. Elian stood amidst the wreckage, the storm fading from around him, leaving only the faint scent of ozone and rain. The humility in his eyes was the same as the boy in the training yard, but the power that radiated from him was absolute.</p>
+
+                    <p>They did not crown him with gold or sunstone. Instead, when the rains came to wash the Keep clean, the people looked up and saw the clouds part around him, and they whispered the title that would become his legend. He was the Storm-Singer, the king who wore not a crown of metal, but the silent, awe-inspiring Crown of Storms. His strength was not the absence of weakness, but the mastery of it.</p>
+                </div>
+
+                <div class="chapter-navigation">
+                    <h3 class="toc-title sensa-wild-fill">Table of Contents</h3>
+                    <div class="chapter-list">
+                        <div class="chapter-item" onclick="navigateToChapter(1)" tabindex="0">
+                            <span class="chapter-title playpen-sans">01: The Mocked Seed</span>
+                            <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                        </div>
+                        <div class="chapter-item active">
+                            <span class="chapter-title playpen-sans">02: The Crown of Storms</span>
+                            <span class="chapter-date playpen-sans">Sat, Sept, 27, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginpage" class="page">
+        <div class="login-background">
+            <header class="header">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Logo" class="logo" onclick="navigateToHome()" tabindex="0">
+                </div>
+            </header>
+
+            <main class="login-main">
+                <div class="login-container">
+                    <form class="login-form" onsubmit="handleLogin(event)">
+                        <h2 class="login-title sensa-wild-fill">Log in</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label login-label sensa-wild-fill" for="username">Username</label>
+                            <input type="text" id="username" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label login-label sensa-wild-fill" for="password">Password</label>
+                            <input type="password" id="password" class="form-control" required>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full-width">Log in</button>
+                        
+                        <div class="login-footer">
+                            <p class="login-label sensa-wild-fill">Already have an account yet?</p>
+                        </div>
+
+                        <div class="error-message hidden" id="error-message">
+                            Invalid username or password. Please try again.
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
